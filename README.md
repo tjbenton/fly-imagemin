@@ -7,7 +7,6 @@
 > [imagemin](https://github.com/imagemin/imagemin) plugin for _[Fly][fly]_.
 
 [![][fly-badge]][fly]
-[![][travis-badge]][travis-link]
 [![][mit-badge]][mit]
 
 ### Install

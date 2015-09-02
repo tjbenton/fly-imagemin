@@ -7,8 +7,6 @@
 > [imagemin](https://github.com/imagemin/imagemin) plugin for _[Fly][fly]_.
 
 [![][fly-badge]][fly]
-[![npm package][npm-ver-link]][releases]
-[![][dl-badge]][npm-pkg-link]
 [![][travis-badge]][travis-link]
 [![][mit-badge]][mit]
 
@@ -35,33 +33,33 @@ export default function* () {
 
 ##### optimizationLevel *(png)*
 
-Type: `number`
-Default: `3`
+- Type: `number`
+- Default: `3`
 
 ##### progressive *(jpg)*
 
-Type: `boolean`
-Default: `false`
+- Type: `boolean`
+- Default: `false`
 
 ##### interlaced *(gif)*
 
-Type: `boolean`
-Default: `false`
+- Type: `boolean`
+- Default: `false`
 
 ##### multipass *(svg)*
 
-Type: `boolean`
-Default: `false`
+- Type: `boolean`
+- Default: `false`
 
 ##### svgoPlugins *(svg)*
 
-Type: `array`
-Default: `[]`
+- Type: `array`
+- Default: `[]`
 
 ##### use
 
-Type: `array`
-Default: `null`
+- Type: `array`
+- Default: `null`
 
 Additional [plugins](https://www.npmjs.com/browse/keyword/imageminplugin) to use with imagemin.
 

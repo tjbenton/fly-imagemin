@@ -1,0 +1,37 @@
+{
+  "name": "fly-imagemin",
+  "version": "0.0.1",
+  "description": "Minify PNG, JPEG, GIF and SVG images with fly",
+  "license": "MIT",
+  "repository": "https://github.com/juanfran/fly-imagemin",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "fly",
+    "fly-plugin",
+    "imagemin"
+  ],
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "npm run lint && fly && node test/test.js"
+  },
+  "author": {
+    "name": "Juanfran",
+    "email": "juanfran.ag@gmail.com",
+    "url": "http://github.com/juanfran"
+  },
+  "dependencies": {
+    "imagemin": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^0.21.2",
+    "fly": "^0.8.3",
+    "fly-imagemin": "./"
+  },
+  "engines": {
+    "iojs": ">= 1.0.0",
+    "node": ">= 0.11.0"
+  }
+}

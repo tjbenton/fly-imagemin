@@ -1,0 +1,17 @@
+{
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "semi": [2, "never"],
+    "curly": 0,
+    "strict": 0
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "modules": true,
+    "generators": true,
+    "templateStrings": true
+  },
+}

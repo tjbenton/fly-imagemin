@@ -1,7 +1,7 @@
-const Imagemin = require("imagemin")
+var Imagemin = require("imagemin")
 
-let min = function(data, options, cb) {
-  let imagemin = new Imagemin()
+var min = function(data, options, cb) {
+  var imagemin = new Imagemin()
         .src(data)
         .use(Imagemin.gifsicle({interlaced: options.interlaced}))
         .use(Imagemin.jpegtran({progressive: options.progressive}))
@@ -13,7 +13,7 @@ let min = function(data, options, cb) {
 
   imagemin.run((err, files) => {
     if (err) {
-      console.error(`imagemin error in ${err}`)
+      console.error('imagemin error in ' + err)
 
       return
     }
@@ -22,8 +22,9 @@ let min = function(data, options, cb) {
   })
 }
 
-export default function () {
-  this.filter("imagemin", (data, options) => {
+module.exports = function imagemin() {
+  this.filter('imagemin', function(data, options) {
     return this.defer(min)(data, options)
   })
 }
+
